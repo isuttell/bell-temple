@@ -1,4 +1,4 @@
-frequency-analyzer
+bell-temple
 ==================
 
-Using an Arduino, takes a digital input from a microphone and converts the signal into frequency data using Fast Hartley Transform (FHT)
+This Arduino project analyizes a sound input from a microphone, converts it to frequency data using FHT, and visualizes it using a strip of NeoPixels.
