@@ -6,8 +6,8 @@ This Arduino project analyizes a sound input from a microphone, converts it to f
 
 ## Key Hardware
 
-* Arduino Uno
-* Electret microphone
+* [Arduino Uno](http://www.adafruit.com/products/50)
+* [Electret microphone](http://www.adafruit.com/products/1063)
 * [NeoPixel Strip](http://www.adafruit.com/products/1376)
 
 
