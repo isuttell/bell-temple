@@ -259,6 +259,7 @@ void adcInit(uint32_t ticks, uint8_t pin, uint8_t ref) {
 	Serial.println(ticks);
 	// if (ticks < 0X10000) {
 
+
 	// no prescale, CTC mode
 		TCCR1B = (1 << WGM13) | (1 << WGM12) | (1 << CS10);
 		tshift = 0;
@@ -288,7 +289,7 @@ void adcInit(uint32_t ticks, uint8_t pin, uint8_t ref) {
 
 	// divide by prescaler
 	ticks >>= tshift;
-	// set TOP for timer reset
+	// set TOP for timer reset - timer will count up to this - used to control speed and calculate frequencies
 	ICR1 = ticks - 1;
 	// compare for ADC start
 	OCR1B = 0;
